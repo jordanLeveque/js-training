@@ -1,15 +1,18 @@
 'use strict'
 
 /*
- * Create the function `abs` that takes one number argument
- * and returns it's absolute value.
- * You must not just use `Math.abs`, make your own.
- * see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+Create the function `abs` that takes one number argument
+and returns it's absolute value.
+You must not just use `Math.abs`, make your own.
+see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
  *
  * @notions Functions, Ternary
  */
 
 // Your code :
+function abs(num) {
+    return (num < 0 ? -num : num);
+}
 
 //* Begin of tests
 const assert = require('assert')

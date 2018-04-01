@@ -9,6 +9,16 @@
  */
 
 // Your code :
+function multiply(a, b) {
+    let z = 0;
+    if (b < 0) {
+        for (let i = 0; i < -b; i++) z += a;
+        z= -z;
+    } else {
+        for (let i = 0; i < b; i++) z += a;
+    };
+    return z;
+}
 
 //* Begin of tests
 const assert = require('assert')

@@ -6,6 +6,11 @@
  *
  */
 
+function total(tab) {
+    let toto = 0;
+    for(let i of tab) toto += i;
+    return toto;
+}
 
 //* Begin of tests
 const assert = require('assert')
