@@ -2,7 +2,7 @@
 
 /*
  * Create a get function that takes a key and return the corresponding value
- * in the sourceObject
+in the sourceObject
  *
  * @notions Functions, Data-Structures, Get
  */
@@ -16,6 +16,9 @@ const sourceObject = {
 }
 
 // Your code :
+function get(i){
+  return sourceObject[i];
+}
 
 //* Begin of tests
 const assert = require('assert')
