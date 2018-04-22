@@ -1,14 +1,17 @@
 'use strict'
 
 /*
- * Create an object `circular` that has a property named `circular` with
- * itself as the value
+ * Create an object `circular` that has a property named `circular` with itself as the value
  *
  * @notions Data-Structures, Get, Set
  */
 
 // Your code :
-
+let circular = {
+    get circular() {
+        return circular
+    }
+};
 //* Begin of tests
 const assert = require('assert')
 

@@ -10,6 +10,23 @@
  */
 
 // Your code :
+function multiply(nb1, nb2) {
+    let y = 0;
+    if (nb1 == 0 || nb2 == 0) return 0;
+    if (nb2 < 0) {
+        let res = nb1.toString();
+        let res2 = ',' + res;
+        res = res + res2.repeat(-nb2 - 1);
+        res = res.split(',').map(x => parseInt(x)).map(x => y += x);
+        return -res[res.length - 1];
+    } else {
+        let res = nb1.toString();
+        let res2 = ',' + res;
+        res = res + res2.repeat(nb2 - 1);
+        res = res.split(',').map(x => parseInt(x)).map(x => y += x);
+        return res[res.length - 1];
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
